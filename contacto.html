@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/c338a9800b.js" crossorigin="anonymous"></script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script type="text/javascript" src='archivo.js'></script>
+    <title>Fairest One of All</title>
+</head>
+<body>
+    <header>
+        <a href="index.html">Fairest One of All</a>
+    </header>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="catalogo.html">Nuestras fragancias</a></li>
+                    <li><a href="about.html">Sobre nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+    <main>
+        <h2>Podés dejarnos tu consulta o sugerencia a continuación:</h2>
+	<form onsubmit="return validacion();" method="post">
+		<label for="nombre" >Nombre: </label>
+		<input type="text" id="nombre" required>
+        <br>
+
+		<label for="email">Mail:</label>
+		<input type="text" id="email">
+        <br>
+
+        <label for="msj">Mensaje:</label>
+        <textarea name="msj" maxlength="1000" id="msj" required></textarea>
+        <br>
+		<input type="submit" id="boton" value="Enviar">
+		<input type="reset" id="boton" value="Cancelar">
+	</form>
+    </main>
+
+    <footer><div class="contacto" data-aos="fade-up">
+        <div class="cont-contenedor">
+            <div class="texto">Encontranos en nuestras redes sociales</div>
+            <div class="social-media">
+                <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook" alt="Facebook"></i></a>
+                <a href="https://instagram.com/" target="_blank"><i class="fa-brands fa-instagram" alt="Instagram"></i></a>
+                <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter" alt="Twitter"></i></a>
+            </div>
+        </div>
+    </div></footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
